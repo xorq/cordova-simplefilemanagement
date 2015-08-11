@@ -282,7 +282,8 @@ var fileSystemSingleton = {
 				callback(fileSystemSingleton.fileSystem);
 			}, 
 			function(err){
-				Log('FileSystem','load fail')('error loading file system');
+				Log('FileSystem','load fail');
+				Log('error loading file system');
 				fail(err);
 			}
 		);
